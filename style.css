@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Jost', serif;
+    min-height: 100vh;
+    background: url('kanyakumari.jpg') 
+    no-repeat center center/cover;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: transparent;
+    box-shadow: 0 10px 20px rgba(25, 15, 31, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2rem;
+    max-width: 1600px;
+}
+
+.navbar-logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-container .navbar-menu{
+    display: flex;
+    text-align: center;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navbar-container .navbar-menu li a{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    transition: all 0.7s ease;
+    white-space: nowrap;
+}
+
+.navbar-container .navbar-menu li a:hover,
+.navbar-container .navbar-menu li a.active{
+    color: #162530;
+    background: rgba(188,212,229,0.8);
+    border: 2px solid #fff;
+}
+
+.navbar-toggle{
+    display: none;
+    background: transparent;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.home h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+
+.home p{
+    padding: 2rem;
+    font-size: 1.3em;
+}
+.destinations h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+.gallery h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+
+.contact h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+
+.cards .card h3 a{
+    font: 1.2em bold;
+    text-decoration: none;
+    padding-bottom: 1rem;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.cards .card p{
+    padding-top:10px;
+}
+/* Andhra State CSS*/
+/* Andhra Section = state-intro CSS*/
+.state-intro h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+
+.state-intro p{
+    padding: 2rem;
+    font-size: 1.3em;
+}
+/* Andhra Section = state-intro CSS END*/
+.places h2{
+    padding: 1rem;
+    font: 2.5em bold;
+    text-align: center;
+    color: #fff;
+}
+
+.place .place-info h3{
+    padding: 2rem;
+    font-size: 1.3em;
+    color: #fff;
+}
+.place-info p{
+    padding: 2rem;
+    font-size: 1.3em;
+    color: #fff;
+}
+.best-time h2 {
+    padding: 2rem;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.best-time p {
+    padding: 2rem;
+    font-size: 1.3em;
+    color: #f1efef;
+}
+/*Andhra State CSS END*/
+/* Card CSS*/
+nav a {
+color: #fff;
+text-decoration: none;
+}
+.hero {
+padding: 2rem;
+background: url('https://via.placeholder.com/1200x400') no-repeat center/cover;
+color: white;
+text-align: center;
+}
+.destinations .cards {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 1rem;
+padding: 2rem;
+}
+.card {
+ background: transparent;
+    box-shadow: 0 10px 20px rgba(25, 15, 31, 0.5);
+    backdrop-filter: blur(10px);
+padding: 1rem;
+border-radius: 10px;
+width: 200px;
+text-align: center;
+}
+.gallery .photos {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+gap: 10px;
+padding: 2rem;
+}
+.gallery img {
+border-radius: 10px;
+ background: transparent;
+    box-shadow: 0 10px 20px rgba(25, 15, 31, 0.5);
+    backdrop-filter: blur(10px);
+width: 200px;
+height: 250px;
+transform:transform 0.4s, box shadow 0.4s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+form input, form textarea, form button {
+  margin: 10px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+form button {
+  background: #ff6600;
+  color: white;
+  cursor: pointer;
+
+}
+
+form button:hover {
+  background: #e65c00;
+}
+
+footer {
+background: #007b5e;
+color: white;
+text-align: center;
+padding: 1rem;
+margin-top: 20px;
+}
+.places {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .place {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+  }
+  
+  .place img {
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .place-info {
+    width: 60%;
+    padding: 20px;
+  }
+  
+  .place.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .place h3 {
+    margin-bottom: 10px;
+    color: #006400;
+  }
+  /* Card CSS */
+
+/* Responsive Style*/
+@media (max-width: 880px){
+    .navbar {
+        backdrop-filter: none;
+    }
+
+    .navbar-container .navbar-menu {
+        display: none;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.7rem !important;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5rem 1.5rem;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar-container .navbar-menu.active {
+        display:flex;
+    }
+
+    .navbar-toggle{
+        display: block;
+        z-index: 999;
+    }
+
+    .navbar-toggle.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .navbar-toggle.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .navbar-toggle.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }   
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        padding: 0 1rem;
+    }
+
+    .navbar-logo {
+        font-size: 1.7rem;
+    }   
+
+    .navbar-container .navbar-menu li a {
+        font-size: 1.2rem;
+        padding: 3px 15px;
+    }
+}
